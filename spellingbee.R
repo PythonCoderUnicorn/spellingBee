@@ -47,6 +47,7 @@ spellingBee = function(dictionary= dictionary, possible_letters, req_letter){
 
 spellingBee(possible_letters = "GANIMCP", req_letter = "P") %>% view()
 
+.
 
 
 
