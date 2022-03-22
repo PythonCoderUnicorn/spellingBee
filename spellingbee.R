@@ -19,11 +19,11 @@ dictionary_clean
 
 # get only specific letters for word search: YAELHIV
 dictionary_clean %>% 
-  filter(word %>% str_detect("^[YAELHIV]+$"),
+  filter(word %>% str_detect("^[MNICAG]+$"),
          # word length is 4 or more
          str_length(word) >= 4) %>% 
   # find words with V in it
-  filter(word %>%  str_detect("V")) %>% 
+  filter(word %>%  str_detect("P")) %>% 
   mutate(word_length = str_length(word)) %>% 
   arrange( desc(str_length(word_length)))
 
@@ -44,7 +44,7 @@ spellingBee = function(dictionary= dictionary, possible_letters, req_letter){
 }
 
 dictionary_clean %>% 
-  spellingBee(possible_letters = "YAELHIV", req_letter = "V")
+  spellingBee(possible_letters = "GANIMCP", req_letter = "P") %>% view()
 
 
 
