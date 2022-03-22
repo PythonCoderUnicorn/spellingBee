@@ -43,8 +43,9 @@ spellingBee = function(dictionary= dictionary, possible_letters, req_letter){
     arrange( desc(str_length(word_length)))
 }
 
-dictionary_clean %>% 
-  spellingBee(possible_letters = "GANIMCP", req_letter = "P") %>% view()
+
+
+spellingBee(possible_letters = "GANIMCP", req_letter = "P") %>% view()
 
 
 

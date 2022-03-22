@@ -11,6 +11,5 @@ You can add `%>% view()` at the end of the function to view all possible
 words. 
 
 ```
-dictionary_clean %>% 
-  spellingBee(possible_letters = "GANIMCP", req_letter = "P")
+spellingBee(possible_letters = "GANIMCP", req_letter = "P")
 ```
