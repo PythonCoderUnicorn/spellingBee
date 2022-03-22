@@ -1,2 +1,2 @@
-# spellingBee
-solve NYT spelling bee  using regular expressions
+# spelling Bee
+solve NYT spelling beeusing regular expressions
